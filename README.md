@@ -169,6 +169,38 @@ Adjust animation timing in `styles.css`:
 --transition-fast: all 0.15s ease;
 ```
 
+## Development / Notebook setup
+
+If you want to run the included `EmbeddingAPI.ipynb` notebook or any Python code, follow these steps:
+
+1. Create a virtual environment inside the project folder (recommended):
+
+```bash
+python3 -m venv .venv
+```
+
+2. Activate the virtual environment (macOS / zsh):
+
+```bash
+source .venv/bin/activate
+```
+
+3. Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a `.env` file in the project root and set your OpenAI API key (the repository includes a `.env` template you should edit):
+
+```
+OPENAI_API_KEY="sk-REPLACE_ME"
+```
+
+5. The notebook uses `python-dotenv` to load `.env` automatically. Start Jupyter or open the notebook in VS Code and run the install cell if necessary.
+
+Security note: Do NOT commit your real `.env` file or API keys to version control. Keep them local and private.
+
 ## 🎓 Educational Value
 
 This website demonstrates:
