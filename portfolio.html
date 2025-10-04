@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TechVision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navigation">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="3"/>
+                        <path d="M25 15 L25 35 M15 25 L35 25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Our Work</h1>
+                    <p class="page-subtitle">Explore our portfolio of successful projects and satisfied clients</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="portfolio-filter-section">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">FinanceHub</h3>
+                                        <p class="overlay-category">Web Application</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">Web App</span>
+                                <span class="portfolio-tag">FinTech</span>
+                            </div>
+                            <h3 class="portfolio-title">FinanceHub Dashboard</h3>
+                            <p class="portfolio-description">
+                                A comprehensive financial management platform with real-time analytics 
+                                and advanced reporting capabilities.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">50K+</span>
+                                    <span class="stat-label">Users</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">4.8</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">FitTrack Pro</h3>
+                                        <p class="overlay-category">Mobile App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">Mobile</span>
+                                <span class="portfolio-tag">Health</span>
+                            </div>
+                            <h3 class="portfolio-title">FitTrack Pro</h3>
+                            <p class="portfolio-description">
+                                AI-powered fitness tracking app that provides personalized workout plans 
+                                and nutrition guidance.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">100K+</span>
+                                    <span class="stat-label">Downloads</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">4.7</span>
+                                    <span class="stat-label">App Store</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">85%</span>
+                                    <span class="stat-label">Retention</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="cloud">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">CloudScale</h3>
+                                        <p class="overlay-category">Cloud Infrastructure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">Cloud</span>
+                                <span class="portfolio-tag">Enterprise</span>
+                            </div>
+                            <h3 class="portfolio-title">CloudScale Migration</h3>
+                            <p class="portfolio-description">
+                                Complete cloud migration for a Fortune 500 company, reducing costs 
+                                by 40% while improving performance.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Cost Saved</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">3x</span>
+                                    <span class="stat-label">Faster</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">0</span>
+                                    <span class="stat-label">Downtime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">ShopSmart</h3>
+                                        <p class="overlay-category">E-commerce</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">E-commerce</span>
+                                <span class="portfolio-tag">Retail</span>
+                            </div>
+                            <h3 class="portfolio-title">ShopSmart Platform</h3>
+                            <p class="portfolio-description">
+                                Modern e-commerce platform with seamless checkout, inventory management, 
+                                and AI-powered recommendations.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">$2M+</span>
+                                    <span class="stat-label">Monthly Sales</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">150%</span>
+                                    <span class="stat-label">Growth</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2.5s</span>
+                                    <span class="stat-label">Load Time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">SmartChat AI</h3>
+                                        <p class="overlay-category">AI Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">AI/ML</span>
+                                <span class="portfolio-tag">Customer Service</span>
+                            </div>
+                            <h3 class="portfolio-title">SmartChat AI Assistant</h3>
+                            <p class="portfolio-description">
+                                Intelligent chatbot powered by natural language processing, reducing 
+                                customer service costs by 60%.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">90%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">24/7</span>
+                                    <span class="stat-label">Available</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">60%</span>
+                                    <span class="stat-label">Cost Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder portfolio-placeholder">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3 class="overlay-title">EduLearn</h3>
+                                        <p class="overlay-category">EdTech App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-tag">Mobile</span>
+                                <span class="portfolio-tag">Education</span>
+                            </div>
+                            <h3 class="portfolio-title">EduLearn Platform</h3>
+                            <p class="portfolio-description">
+                                Interactive learning platform with gamification, progress tracking, 
+                                and adaptive learning paths.
+                            </p>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">200K+</span>
+                                    <span class="stat-label">Students</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">4.9</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">92%</span>
+                                    <span class="stat-label">Completion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study Section -->
+        <section class="case-study-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Featured Case Study</span>
+                    <h2 class="section-title">How We Helped TechCorp Scale</h2>
+                </div>
+                <div class="case-study-content">
+                    <div class="case-study-info">
+                        <div class="case-study-block">
+                            <h3 class="case-study-heading">The Challenge</h3>
+                            <p class="case-study-text">
+                                TechCorp was struggling with an outdated infrastructure that couldn't handle 
+                                their growing user base. System crashes were frequent, and deployment times 
+                                exceeded 2 weeks.
+                            </p>
+                        </div>
+                        <div class="case-study-block">
+                            <h3 class="case-study-heading">Our Solution</h3>
+                            <p class="case-study-text">
+                                We implemented a microservices architecture on AWS with automated CI/CD 
+                                pipelines, containerization, and comprehensive monitoring systems.
+                            </p>
+                        </div>
+                        <div class="case-study-block">
+                            <h3 class="case-study-heading">The Results</h3>
+                            <ul class="case-study-list">
+                                <li>99.99% uptime achieved</li>
+                                <li>Deployment time reduced from 2 weeks to 15 minutes</li>
+                                <li>Infrastructure costs reduced by 35%</li>
+                                <li>Application performance improved by 200%</li>
+                                <li>Team productivity increased by 60%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="case-study-metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon">📈</div>
+                            <div class="metric-value">200%</div>
+                            <div class="metric-label">Performance Boost</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">⚡</div>
+                            <div class="metric-value">15min</div>
+                            <div class="metric-label">Deploy Time</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">💰</div>
+                            <div class="metric-value">35%</div>
+                            <div class="metric-label">Cost Reduction</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">✓</div>
+                            <div class="metric-value">99.99%</div>
+                            <div class="metric-label">Uptime</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-description">
+                        Let's create something amazing together.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechVision</h3>
+                    <p class="footer-description">
+                        Building the future of technology, one solution at a time.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Licensing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

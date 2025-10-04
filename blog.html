@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TechVision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navigation">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="3"/>
+                        <path d="M25 15 L25 35 M15 25 L35 25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">TechVision</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Tech Insights & Updates</h1>
+                    <p class="page-subtitle">Stay informed with the latest trends, tips, and innovations in technology</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post-section">
+            <div class="container">
+                <article class="featured-post">
+                    <div class="featured-post-image">
+                        <div class="image-placeholder blog-placeholder">
+                            <span class="featured-badge">Featured</span>
+                        </div>
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Cloud Computing</span>
+                            <span class="post-date">October 1, 2025</span>
+                            <span class="post-reading-time">8 min read</span>
+                        </div>
+                        <h2 class="featured-post-title">
+                            The Future of Cloud Computing: Trends to Watch in 2025
+                        </h2>
+                        <p class="featured-post-excerpt">
+                            Explore the emerging trends shaping cloud computing this year, from edge computing 
+                            to serverless architectures. Learn how these innovations are transforming how 
+                            businesses deploy and scale their applications.
+                        </p>
+                        <div class="post-author">
+                            <div class="author-avatar-small">SC</div>
+                            <div class="author-details">
+                                <div class="author-name-small">Sarah Chen</div>
+                                <div class="author-role-small">Chief Technology Officer</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Read Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-sidebar-layout">
+                    <div class="blog-main">
+                        <div class="blog-grid">
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Development</span>
+                                        <span class="post-date">Sep 28, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">Building Scalable Microservices with Docker and Kubernetes</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        A comprehensive guide to architecting and deploying microservices 
+                                        using containerization technologies.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">EP</div>
+                                            <span>Emily Rodriguez</span>
+                                        </div>
+                                        <span class="post-reading-time">10 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">AI/ML</span>
+                                        <span class="post-date">Sep 25, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">Machine Learning in Production: Best Practices</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        Learn how to deploy and maintain machine learning models in production 
+                                        environments effectively.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">AJ</div>
+                                            <span>Alex Johnson</span>
+                                        </div>
+                                        <span class="post-reading-time">12 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Design</span>
+                                        <span class="post-date">Sep 22, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">UI/UX Design Principles for Modern Web Applications</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        Discover the essential design principles that create intuitive 
+                                        and engaging user experiences.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">MP</div>
+                                            <span>Marcus Peterson</span>
+                                        </div>
+                                        <span class="post-reading-time">7 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Security</span>
+                                        <span class="post-date">Sep 19, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">Cybersecurity Best Practices for Cloud Applications</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        Essential security measures every organization should implement 
+                                        when moving to the cloud.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">SC</div>
+                                            <span>Sarah Chen</span>
+                                        </div>
+                                        <span class="post-reading-time">9 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">DevOps</span>
+                                        <span class="post-date">Sep 16, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">Automating Your CI/CD Pipeline: A Complete Guide</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        Step-by-step guide to building robust CI/CD pipelines that streamline 
+                                        your development workflow.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">EP</div>
+                                            <span>Emily Rodriguez</span>
+                                        </div>
+                                        <span class="post-reading-time">11 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-image">
+                                    <div class="image-placeholder blog-card-placeholder"></div>
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Mobile</span>
+                                        <span class="post-date">Sep 13, 2025</span>
+                                    </div>
+                                    <h3 class="blog-card-title">
+                                        <a href="#">React Native vs Flutter: Choosing the Right Framework</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt">
+                                        An in-depth comparison of two popular cross-platform mobile development 
+                                        frameworks.
+                                    </p>
+                                    <div class="blog-card-footer">
+                                        <div class="post-author-mini">
+                                            <div class="author-avatar-mini">AJ</div>
+                                            <span>Alex Johnson</span>
+                                        </div>
+                                        <span class="post-reading-time">8 min read</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="pagination">
+                            <button class="pagination-btn" disabled>Previous</button>
+                            <div class="pagination-numbers">
+                                <button class="pagination-number active">1</button>
+                                <button class="pagination-number">2</button>
+                                <button class="pagination-number">3</button>
+                                <span class="pagination-ellipsis">...</span>
+                                <button class="pagination-number">10</button>
+                            </div>
+                            <button class="pagination-btn">Next</button>
+                        </div>
+                    </div>
+
+                    <aside class="blog-sidebar">
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Search</h3>
+                            <form class="search-form">
+                                <input type="search" class="search-input" placeholder="Search articles...">
+                                <button type="submit" class="search-button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="m21 21-4.35-4.35"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul class="category-list">
+                                <li><a href="#">Cloud Computing <span>(12)</span></a></li>
+                                <li><a href="#">Development <span>(18)</span></a></li>
+                                <li><a href="#">AI/ML <span>(15)</span></a></li>
+                                <li><a href="#">Design <span>(9)</span></a></li>
+                                <li><a href="#">Security <span>(11)</span></a></li>
+                                <li><a href="#">DevOps <span>(14)</span></a></li>
+                                <li><a href="#">Mobile <span>(10)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Popular Posts</h3>
+                            <div class="popular-posts">
+                                <article class="popular-post">
+                                    <div class="popular-post-image">
+                                        <div class="image-placeholder popular-post-placeholder"></div>
+                                    </div>
+                                    <div class="popular-post-content">
+                                        <h4 class="popular-post-title">
+                                            <a href="#">10 Essential JavaScript Tips for 2025</a>
+                                        </h4>
+                                        <span class="popular-post-date">Sep 10, 2025</span>
+                                    </div>
+                                </article>
+                                <article class="popular-post">
+                                    <div class="popular-post-image">
+                                        <div class="image-placeholder popular-post-placeholder"></div>
+                                    </div>
+                                    <div class="popular-post-content">
+                                        <h4 class="popular-post-title">
+                                            <a href="#">Building RESTful APIs with Node.js</a>
+                                        </h4>
+                                        <span class="popular-post-date">Sep 5, 2025</span>
+                                    </div>
+                                </article>
+                                <article class="popular-post">
+                                    <div class="popular-post-image">
+                                        <div class="image-placeholder popular-post-placeholder"></div>
+                                    </div>
+                                    <div class="popular-post-content">
+                                        <h4 class="popular-post-title">
+                                            <a href="#">Introduction to WebAssembly</a>
+                                        </h4>
+                                        <span class="popular-post-date">Aug 30, 2025</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <p class="widget-description">
+                                Subscribe to our newsletter for weekly tech insights delivered to your inbox.
+                            </p>
+                            <form class="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Your email" required>
+                                <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                            </form>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Tags</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">JavaScript</a>
+                                <a href="#" class="tag">React</a>
+                                <a href="#" class="tag">Node.js</a>
+                                <a href="#" class="tag">Python</a>
+                                <a href="#" class="tag">AWS</a>
+                                <a href="#" class="tag">Docker</a>
+                                <a href="#" class="tag">Kubernetes</a>
+                                <a href="#" class="tag">AI</a>
+                                <a href="#" class="tag">Machine Learning</a>
+                                <a href="#" class="tag">DevOps</a>
+                                <a href="#" class="tag">UI/UX</a>
+                                <a href="#" class="tag">Security</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechVision</h3>
+                    <p class="footer-description">
+                        Building the future of technology, one solution at a time.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Licensing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
