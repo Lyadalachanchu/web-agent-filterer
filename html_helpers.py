@@ -1,12 +1,14 @@
 from bs4 import BeautifulSoup
 from bs4.element import Comment
 
-def extract_leaves(html_text):
+def extract_leaves(html_file):
     """
     Given HTML text, return a list of leaf text nodes (no child tags).
     Filters out empty strings, comments, and script/style content.
     """
-    soup = BeautifulSoup(html_text, "html.parser")
+    with open(html_file, "r", encoding="utf-8") as f:
+        html = f.read()
+    soup = BeautifulSoup(html, "html.parser")
 
     def is_visible(element):
         # Remove scripts, styles, comments
