@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+
+[project]
+name = "web-agent"
+version = "0.1.0"
+description = "Minimal multi-step web agent with custom context filterer and GPT-5 planner"
+requires-python = ">=3.10"
+dependencies = []
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.ruff]
+line-length = 100
