@@ -1,17 +1,15 @@
 from bs4 import BeautifulSoup
 from bs4.element import Comment
 
-def extract_leaves(html_file):
+def extract_parent_html_of_leaves(html_file):
     """
-    Given HTML text, return a list of leaf text nodes (no child tags).
-    Filters out empty strings, comments, and script/style content.
+    Given an HTML file path, return a list of parent HTML blocks for all visible leaf text nodes.
     """
     with open(html_file, "r", encoding="utf-8") as f:
         html = f.read()
     soup = BeautifulSoup(html, "html.parser")
 
     def is_visible(element):
-        # Remove scripts, styles, comments
         if element.parent.name in ["style", "script", "head", "title", "meta", "[document]"]:
             return False
         if isinstance(element, Comment):
@@ -20,5 +18,9 @@ def extract_leaves(html_file):
             return False
         return True
 
-    leaves = [element.string.strip() for element in soup.find_all(string=True) if is_visible(element)]
-    return leaves
+    parent_html_list = []
+    for element in soup.find_all(string=True):
+        if is_visible(element):
+            parent_html_list.append(str(element.parent))
+
+    return parent_html_list
